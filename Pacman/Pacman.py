@@ -22,7 +22,7 @@ def Pacman():
     win = False
     score = 0
     
-    player = Player(32,128,"images/player.png")
+    player = Player(32,128,"images/right_c.png")
     # Create the blocks that will set the paths where the player can go
     horizontal_blocks = pygame.sprite.Group()
     vertical_blocks = pygame.sprite.Group()
@@ -106,7 +106,7 @@ def Pacman():
         enemies.draw(screen)
         screen.blit(player.image, player.rect)
         text = font.render("Score: " + str(score), True, WHITE)
-        screen.blit(text, [20, 20])
+        screen.blit(text, [80, 20])
 
         if win:
             screen.fill(WHITE)

@@ -18,7 +18,7 @@ class Player(pygame.sprite.Sprite):
         self.image.set_colorkey(BLACK)
         self.rect = self.image.get_rect()
         self.rect.topleft = (x,y)
-        img = pygame.image.load("images/player.png").convert()
+        img = pygame.image.load("images/right_c.png").convert()
         # Create the animations objects
         self.move_right_animation = Animation(img,32,32)
         self.move_left_animation = Animation(pygame.transform.flip(img,True,False),32,32)
